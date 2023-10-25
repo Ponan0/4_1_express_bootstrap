@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <title>PRODUCT</title>
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">E-Commerce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="product.html">Products</a>
+                    </li>
+  
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+                <button type="button" class="btn btn-success position-relative" data-bs-toggle="modal" data-bs-target="#addproductModal">
+                  Add Product
+                     <span class="visually-hidden">Add Product</span>
+                   </span>
+                 </button>
+              </div>
+
+              <div class="modal fade" id="addproductModal" tabindex="-1" aria-labelledby="addproductModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="addproductModalLabel">Add a product</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Product Name">
+                            <label for="floatingInput">Product Name</label>
+                        </div>
+                        <div class="input-group form-floating mb-3">
+                          <span class="input-group-text">Description</span>
+                          <textarea class="form-control" aria-label="Description"></textarea>
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">₱</span>
+                          <input type="text" class="form-control" aria-label="Amount (to the nearest peso)">
+                          <span class="input-group-text">.00</span>
+                        </div>
+                        <label>Product image</label>
+                        <div class="input-group">
+                          <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Add product</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          
+
+          <div class="container" style="padding-top: 15px;">
+            <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
+                <div class="col" style="max-width:500px">
+                    <div class="card h-100">
+                        <img src="C:\Project\4_1_express_bootstrap\assets\1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">NIKE AIR JORDAN 1 LOW 'MOCHA'</h5>
+                            <p class="card-text">AUTHENTICITY: Authenticity is the foundation of our business. 
+                                  We source our products only from trusted suppliers and every item we sell is inspected by our 
+                                  expert team so you are guaranteed that the item is 100% authentic.
+                            </p>
+                        </div>
+                 <ul class="list-group list-group-flush">
+                                <li class="list-group-item">IMPORTANT: If you have any questions or concerns with regard to sizing 
+                                  or condition of a specific product on our site, please contact us at bit.ly/bimstorechatsupport before 
+                                  committing to purchase. Refunds are ONLY processed based on fulfillment errors, such as incorrectly shipped or 
+                                  missing items. Feel free to contact us with any questions.
+                              </ul>
+                        <div class="card-body">
+              
+                                  <div class="d-flex bd-highlight mb-3">
+                                      
+                                      <div class="me-auto p-2 bd-highlight">
+                                          <label for="product">Price:</label>
+                                          <button type="button" class="btn btn-dark" id="product" disabled>₱10,495.00</button>
+                                      </div>
+                                      <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-success">Add to Cart</button></div>
+                                      <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-primary position-relative">💙</button></div>
+                                    </div>
+              
+                          </div>
+                    </div>
+                </div>
+                <div class="col" style="max-width: 500px">
+                    <div class="card h-100">
+                        <img src="C:\Project\4_1_express_bootstrap\assets\2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">NIKE AIR JORDAN 1 LOW 'VINTAGE GREY'</h5>
+                            <p class="card-text">AUTHENTICITY: Authenticity is the foundation of our business. 
+                                  We source our products only from trusted suppliers and every item we sell is inspected by our 
+                                  expert team so you are guaranteed that the item is 100% authentic.
+                            </p>
+                        </div>
+                 <ul class="list-group list-group-flush">
+                                <li class="list-group-item">IMPORTANT: If you have any questions or concerns with regard to sizing 
+                                  or condition of a specific product on our site, please contact us at bit.ly/bimstorechatsupport before 
+                                  committing to purchase. Refunds are ONLY processed based on fulfillment errors, such as incorrectly shipped or 
+                                  missing items. Feel free to contact us with any questions.
+                              </ul>
+                        <div class="card-body">
+              
+                                  <div class="d-flex bd-highlight mb-3">
+                                      
+                                      <div class="me-auto p-2 bd-highlight">
+                                          <label for="product">Price:</label>
+                                          <button type="button" class="btn btn-dark" id="product" disabled>₱13,995.00</button>
+                                      </div>
+                                      <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-success">Add to Cart</button></div>
+                                      <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-primary position-relative">💙</button></div>
+                                    </div>
+              
+                          </div>
+                    </div>
+                </div>
+                <div class="col" style="max-width:500px">
+                    <div class="card h-100">
+                        <img src="C:\Project\4_1_express_bootstrap\assets\3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">NIKE WOMENS AIR JORDAN 4 RETRO 'SHIMMERS'</h5>
+                            <p class="card-text">AUTHENTICITY: Authenticity is the foundation of our business. 
+                                  We source our products only from trusted suppliers and every item we sell is inspected by our 
+                                  expert team so you are guaranteed that the item is 100% authentic.
+                             </p>
+                        </div>
+                 <ul class="list-group list-group-flush">
+                                <li class="list-group-item">IMPORTANT: If you have any questions or concerns with regard to sizing 
+                                  or condition of a specific product on our site, please contact us at bit.ly/bimstorechatsupport before 
+                                  committing to purchase. Refunds are ONLY processed based on fulfillment errors, such as incorrectly shipped or 
+                                  missing items. Feel free to contact us with any questions.
+                              </ul>
+                        <div class="card-body">
+              
+                                  <div class="d-flex bd-highlight mb-3">
+                                      
+                                      <div class="me-auto p-2 bd-highlight">
+                                          <label for="product">Price:</label>
+                                          <button type="button" class="btn btn-dark" id="product" disabled>₱15,995.00</button>
+                                      </div>
+                                      <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-success">Add to Cart</button></div>
+                                      <div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-primary position-relative">💙</button></div>
+                                    </div>
+              
+                          </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+
+    </body>
